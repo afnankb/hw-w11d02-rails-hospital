@@ -1,0 +1,13 @@
+
+
+
+
+<h2> All patients </h2>
+
+<%@patients.each do |patient|%>
+<div>
+
+ firstname :<%=  link_to  patient.first_name  , patient %>
+ 
+<div>
+<% end %>

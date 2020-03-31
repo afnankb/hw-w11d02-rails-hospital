@@ -1,0 +1,15 @@
+<h2> New patient </h2>
+
+<% if @patient.errors.any? %>
+<h3>  we have got problems ! </h3>
+
+<ul>
+ <% @patient.errors.full_messages.each do |msg| %>
+ <li>
+<%= msg %>
+</li>
+<%end %>
+</ul>
+<% end %>
+
+ADD: <%= render partial: 'form', locals: { patient: @patient } %>

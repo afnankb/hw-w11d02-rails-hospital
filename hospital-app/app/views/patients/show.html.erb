@@ -1,0 +1,15 @@
+<h1> show work </h1>
+
+
+ firstname :<%=  @patient.first_name  %>
+ <br>
+ lastname :<%=  @patient.last_name  %>
+  <br>
+ diagnosis : <%= @patient.diagnosis%>
+  <br>
+ DOB : <%= @patient.born_on%>
+  <br>
+ <%=  link_to  "edit"  , patient_edit_url %>
+  <br>
+ <%=  link_to  "Delete"  , patient_delete_url %>
+  
